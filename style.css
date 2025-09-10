@@ -20,11 +20,11 @@ p, label {
 }
 
 html{
-    background-image: url("css/background.png");
+    background-image: url("/css/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 150%;
+    height: 180%;
     display: flax;
     place-items: center;
 }
