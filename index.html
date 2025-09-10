@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This page is for ones, that want to make their own flowers for their own use or somebody else.">
+        <meta name="autor" content="Maťa">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="icon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+        <title>Flowermaker</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h1>Make your own flowers!</h1>
+            <p>For you or somebody else! 😀</p>
+        
+            <!-- Flower style -->
+            <p>Choose your flower style:</p>
+        
+            <label for="rose"> <input type="checkbox" id="rose" name="flowers" value="ROS" class="flowers">
+             Rose🌹
+            </label><br>
+        
+            <label for="hyacinth"> <input type="checkbox" id="hyacinth" name="flowers" value="HYA" class="flowers">
+             Hyacinth🪻
+            </label><br>
+
+            <label for="cherry_b."> <input type="checkbox" id="cherry_b." name="flowers" value="CHE" class="flowers">
+                Cherry blossom 🌸
+            </label><br>
+
+        
+            <label for="sunflower"> <input type="checkbox" id="sunflower" name="flowers" value="SUN" class="flowers">
+             Sunflower 🌻
+            </label><br>
+
+            <label for="cactus">  <input type="checkbox" id="cactus" name="cactus" value="CAC" class="flowers">
+                Cactus 🌵
+            </label><br><br>
+
+
+            <!-- Pot style -->
+            <p>Choose your pot!</p>
+
+            <label for="classic"><img src="pots/classic.PNG" title="Classic" alt="Classic_pot" width="125">
+                <input type="radio" id="classic" name="pot" value="CLA" class="pots">
+            </label>
+
+            <label for="violet"><img src="pots/violet.PNG" title="Violet" alt="Violet_pot" width="150">
+                <input type="radio" id="violet" name="pot" value="VIO" class="pots">
+            </label>
+
+            <label for="green"><img src="pots/green.PNG" title="Green" alt="Green_pot" width="150">
+                <input type="radio" id="green" name="pot" value="GRE" class="pots">
+            </label>
+
+        
+            <label for="gray"><img src="pots/gray.PNG" title="Gray" alt="Gray_pot" width="150">
+                <input type="radio" id="gray" name="pot" value="GRA" class="pots">
+            </label><br><br><br>
+
+            <!-- Number of flowers -->
+            <label for="number">How many flowers do you want to have in your pot?</label><br>
+            <input type="number" id="number" name="number" value=""><br><br><br><br>
+
+            <button onclick="flowermaker()">Make my pot!</button><br><br>
+
+            <h2>Here are your flowers:</h2>
+            <button onclick="clear_canvas()">Clear canvas</button>
+            <button onclick="">Download picture</button><br><br>
+            <canvas id="canvas" width="500" height="600"></canvas>
+        </div>
+        
+    </body>
+
+
+
+</html>
