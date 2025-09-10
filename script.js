@@ -1,5 +1,15 @@
 function flowermaker() {
   const canvas = document.getElementById("canvas");
+
+  const numberOfFlowers = document.getElementById('number').value;
+  if (!numberOfFlowers) {
+    alert("Choose number of flowers at first!")
+  }
+  
+  if (numberOfFlowers < 0) {
+    alert("Choose a non-negative number!")
+  }
+
   if (canvas.getContext) {
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -34,7 +44,7 @@ function flowermaker() {
             const classic_img = new Image();
 
             classic_img.addEventListener("load", () => {
-              ctx.drawImage(classic_img, 122, 233, 254, 299);
+              ctx.drawImage(classic_img, 125, 246, 247, 235);
             });
 
             classic_img.src = "/pots/classic.png";
@@ -75,13 +85,27 @@ function flowermaker() {
     }
     
     //flowers II
+
+    //cactus + cactus flower
     if (flowers.length === 0 && cactus.length > 0) {
       const cactus_img = new Image();
 
       cactus_img.addEventListener("load", () => {
       ctx.drawImage(cactus_img, 171, 147, 156, 178);
       });
+
+      const cactus_flower = new Image();
+      cactus_flower.onload = () => {
+        for (let i = 0; i < numberOfFlowers; i++) {
+        const randX = 175 + Math.random() * (156 - 35); 
+        const randY = 147 + Math.random() * (178 - 35);
+
+        ctx.drawImage(cactus_flower, randX, randY, 35, 35);
+        }
+      };
       cactus_img.src = "/flowers/cactus.png";
+      cactus_flower.src = "/flowers/cactus_flower.png";
+      
     }
     
   }
