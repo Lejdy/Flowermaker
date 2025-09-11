@@ -107,7 +107,15 @@ function flowermaker() {
       cactus_flower.src = "/flowers/cactus_flower.png";
       
     }
-    
+
+
+    if (flowers.length > 0 && cactus.length === 0) {
+      const stem_img = new Image ();
+      stem_img.addEventListener("load", () => {
+        ctx.drawImage(stem_img, 147, 124, 215, 203);
+      });
+      stem_img.src = "/flowers/stem.png";
+    }
   }
 
 
