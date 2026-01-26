@@ -47,7 +47,7 @@ function flowermaker() {
               ctx.drawImage(classic_img, 125, 246, 247, 235);
             });
 
-            classic_img.src = "/pots/classic.png";
+            classic_img.src = "pots/classic.png";
             break;
         
           case "VIO":
@@ -57,7 +57,7 @@ function flowermaker() {
               ctx.drawImage(violet_img, 148, 280, 204, 237);
             });
 
-            violet_img.src = "/pots/violet.png";
+            violet_img.src = "pots/violet.png";
             break;
 
           case "GRE":
@@ -67,7 +67,7 @@ function flowermaker() {
               ctx.drawImage(green_img, 166, 280, 168, 258);
             });
 
-            green_img.src = "/pots/green.png";
+            green_img.src = "pots/green.png";
             break;
 
           case "GRA":
@@ -77,7 +77,7 @@ function flowermaker() {
               ctx.drawImage(gray_img, 172, 280, 156, 258);
             });
 
-            gray_img.src = "/pots/gray.png";
+            gray_img.src = "pots/gray.png";
             break;
     
         }
@@ -103,8 +103,8 @@ function flowermaker() {
         ctx.drawImage(cactus_flower, randX, randY, 35, 35);
         }
       };
-      cactus_img.src = "/flowers/cactus.png";
-      cactus_flower.src = "/flowers/cactus_flower.png";
+      cactus_img.src = "flowers/cactus.png";
+      cactus_flower.src = "flowers/cactus_flower.png";
       
     }
 
@@ -114,7 +114,7 @@ function flowermaker() {
       stem_img.addEventListener("load", () => {
         ctx.drawImage(stem_img, 147, 124, 215, 203);
       });
-      stem_img.src = "/flowers/stem.png";
+      stem_img.src = "flowers/stem.png";
     }
   }
 
